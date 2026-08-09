@@ -510,12 +510,12 @@ margin-left: 10px;
 font-size: 30px;
 }
 #title{
-   width: 600px;
+   width: 400px;
    margin-left: -25px;
    border-radius: 10px;
 }
 #message{
-    width:600px;
+    width:400px;
     margin-left: -25px;
     border-radius: 10px;
 }
