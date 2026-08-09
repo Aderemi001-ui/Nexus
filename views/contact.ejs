@@ -9,10 +9,10 @@
 
 <link rel="stylesheet" href="/css/blog.css">
 </head>
-<body style="overflow-y: auto;overflow-x: hidden;">
+<body style="overflow-y: auto;overflow-x: hidden;" class='contactBody'>
    <div class="containernav2" > 
 
-    <header class="d-flex flex-wrap align-items-center justify-content-center  py-3 mb-4 border-bottom"> 
+    <header class="d-flex-socials flex-wrap align-items-center justify-content-center  py-3 mb-4 border-bottom"> 
     <h1 class="reflect " ><i>NEXA</i></h1>
        
       
@@ -113,17 +113,19 @@
  <form class="contactform" method="POST" > 
             <div class="contactcontainer">
               <h1 class="h3 mb-3 fw-normal mx-5 px-5" >Send Us A Mail</h1>
-             <div class="form-floating mx-5" >
-                 <input type="text" class="mtitle mx-5" id="titlecontact" placeholder="title of mail" name="messagetitle" required >
+             <div class="form-floating mx-5" style="display: flex;flex-direction: column;">
+              <label>Title of Mail</label>
+                 <input type="text" class="mtitle mx-5" id="titlecontact" placeholder="Mail Title" name="messagetitle" required >
                 
                 </div>
-                <div class="form-floating mx-5" >
+                <div class="form-floating mx-5" style="display: flex;flex-direction: column;">
+                           <label>Email of Sender</label>
                  <input type="email" class=" mtitle  " id="emailcontact" placeholder="email of sender"  name="email" required   >
                
                 </div>
-                  <div class="form-floating mx-5"> 
-                    <textarea type="password" class="text form-control2  " id="messagecontact" placeholder="message"  name="messagecontent" required  id="floatingPassword" placeholder="Whats on your mind?"> </textarea>
-                   
+                  <div class="form-floating mx-5" style="display: flex;flex-direction: column;"> 
+                             <label>Mail Subject</label>
+                    <textarea type="text" class="text form-control2  " id="messagecontact" placeholder="message"  name="messagecontent" required  id="floatingPassword" placeholder="Whats on your mind?"> </textarea>
                  </div>
                  <button class="btn btn-primary mx-5" style="justify-self: center;align-self: center;">Send</button>
             </div>

@@ -48,9 +48,10 @@ module.exports.login_post=async(req,res)=>{
   try {
     console.log('User successfully logged in');
   const user=await User.login(email,password)
-  const token=createToken(user._id)
+  const foundUser =await User.findOne({ email: email });
+  const token=createToken(foundUser._id)
   res.cookie('jwt',token,{maxAge:maxAge*1000})
-   res.redirect(`/user/${user._id}/home`);
+   res.redirect(`/user/${foundUser._id}/home`);
   } catch (err) {
     console.error('Login error:', err);
     res.render('login', { error: 'Something went wrong' });
