@@ -478,11 +478,14 @@ margin-left: 90px !important;
 .h3{
     margin-left: 5px !important;
 }
-.form-control{
-    width:300px !important;margin-left: 50px !important;
+.form-floating{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+.form-control{
+    width:300px !important;margin-left: 50px !important;
+    
 }
 .floatingInput{
     width:300px !important;margin-left: 50px !important;
